@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Làm tổng hợp 16 câu trong checklist</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- yêu cầu 16:animation -->
+	<style> 
+		h1 {
+		  width:600px;
+		  height: 50px;
+		  position: relative;
+		  animation-name: example;
+		  animation-duration: 8s;
+		  animation-delay: 2s;
+		}
+
+		@keyframes example {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:-200px; top:200px;}
+		  100% {background-color:red; left:-200px; top:0px;}
+		}
+</style>
+	<div class="container">
+		<!-- yêu cầu 8: dùng thẻ h1 để hiển thị header duy nhất trong file -->
+		<h1>Bài tập checklist css nâng cao</h1>
+		<!-- yêu cầu 10: sử dụng naming HTML-CSS theo đúng chuẩn quy tắc BEM -->
+		<div class="header_1">
+			<form class="form">
+				<input type="text" name="name" placeholder="user">
+				<input type="email" name="name" placeholder="email">
+				<input type="password" name="name" placeholder="password">
+			</form>
+			<h2>tạo ảnh trước thẻ h2 bằng pseudo-class::before</h2>
+			<p>tạo chữ thêm vào sau thẻ p bằng ::after và dùng css tô màu font-size</p>
+			<!-- yêu cầu 11: sử dụng thẻ span để thay thế thẻ p -->
+			<span>sử dụng thẻ span để thay thế cho thẻ p</span>
+		</div>
+		<div class="main">
+			
+		</div>
+		<div class="footer">
+			
+		</div>
+	</div>			
+	<!-- yêu cầu 7: tất cả các code trong html không có inline-style -->
+</body>
+</html>

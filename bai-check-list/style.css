@@ -1,0 +1,78 @@
+/*yêu cầu 15: sử dụng reset css*/
+*{
+	padding:0;
+	margin:0;
+
+}
+/*yêu cầu 9: sử dụng varible trong css*/
+:root{
+	--color:red;
+}
+
+h1{
+	border:1px solid black; /*yêu cầu 14: dùng short-hand cho border property*/
+	text-align: center;
+	padding-top: 10px;
+	margin:auto;
+	box-sizing: border-box; /*yêu cầu 13: dùng box-sizing để set cho elements*/
+	width:600px;
+	height: 50px;
+}
+/*yêu cầu 6: sử dụng css selector để set styles*/
+.container{
+	background:gray;
+	width:1000px;
+	height: 1000px;
+	margin:auto;
+	padding-top: 20px;
+}
+.header{
+	width:100%;
+	height: 40%;
+	margin:30px auto;
+	padding-top: 50px;
+
+}
+input:focus{
+	width:100%;
+	height: 100%;
+	background-color: var(--color);
+
+
+}
+/*yêu cầu 1: sử dụng flex để đưa form vào giữa*/
+.form{
+	display: flex;
+	flex-direction: column;
+	margin:auto;
+	width:50%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+/*yêu cầu 2: sử dụng lớp giả*/
+.header::after{
+	
+	background-image: url(./image/adele.jfif);
+	width:200px;
+	height: auto;	
+}
+h2::before{
+	content:url("image/mandy.png");
+	display:block;
+	
+}
+/*yêu cầu 12: dùng text-transform để hiển thị */
+h2{
+	text-align: center;
+	text-transform:uppercase;
+}
+p::after{
+	content: 'Đây là dòng được thêm vào nhờ thuộc tính của pseudo-class';
+	background-color: yellow;
+	font-size: 20px;
+	float:right;
+}
+p:nth-child(1)::after{
+	clear: right;
+	content: '<div></div>';
+}
